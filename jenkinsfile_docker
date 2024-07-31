@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+	
+    stages {
+	    stage('Git') {
+            steps {
+                git 'https://github.com/ZaynabMohammed/Multistage_docker.git'
+            }
+        }
+        stage('Build and Run Docker') {
+            steps {
+                script {
+                    dir('GO_app') {
+                        sh '''
+                            docker build -t multistage_go -f Dockerfile_multistage .
+                            docker run -d --name app2 -p 8085:8080 multistage_go
+                        '''
+                    }
+                }
+            }
+        }
+    }
+}

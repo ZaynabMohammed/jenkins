@@ -2,7 +2,7 @@
 ## Follow this link, to find all steps
 [Customize the official Jenkins Image](https://www.jenkins.io/doc/book/installing/docker/)
 
- <img src="https://github.com/ZaynabMohammed/jenkins/blob/master/jenkins.png" width="220" height="200" >
+ <img src="https://github.com/ZaynabMohammed/jenkins/blob/master/jenkins.png" width="200" height="180" >
  
 ## Running container based on custom image
  
@@ -14,7 +14,7 @@ a9ce44ab38d1   myjenkins-blueocean:2.452.3-1   "/usr/bin/tini -- /u…"   7 seco
 ## To access Jenkins container
   In the browser's address bar, enter `http://localhost:8080` and press Enter.
   
-  <img src="https://github.com/ZaynabMohammed/jenkins/blob/master/jenkins.png" width="750" height="720" >
+  <img src="https://github.com/ZaynabMohammed/jenkins/blob/master/1.PNG" width="750" height="720" >
 
 ## What we will do inside jenkins Container ?!
    From this github repo [https://github.com/ZaynabMohammed/Multistage_docker.git](https://github.com/ZaynabMohammed/Multistage_docker.git), we will create a free_style job in jenkins to deploy GO_app.

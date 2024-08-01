@@ -71,11 +71,10 @@ sudo apt install ansible -y
 ```
 ## 2] Jobs in jenkins
 1. Freestyle Job
-Step 1:
-```bash   
-1. Add Repository [https://github.com/ZaynabMohammed/jenkins.git](https://github.com/ZaynabMohammed/jenkins.git), in Source Code Management
-2. Add build setup then Execute Shell 
-```
+Step 1:  
+ 1. Add Repository [https://github.com/ZaynabMohammed/jenkins.git](https://github.com/ZaynabMohammed/jenkins.git), in Source Code Management
+ 2. Add build setup then Execute Shell
+   
 ![1](1.PNG)
 
 Step 2:

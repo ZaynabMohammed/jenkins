@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+	
+    stages {
+	    stage('Git') {
+            steps {
+                git 'https://github.com/ZaynabMohammed/jenkins.git'
+            }
+        }
+        stage('Run ansible playbook') {
+            steps {
+                script {
+                    dir('EC2_jenkins') {
+                        sh '''
+                            ansible-playbook ansible-playbook.yml
+                        '''
+                    }
+                }
+            }
+        }
+    }
+}

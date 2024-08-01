@@ -2,7 +2,7 @@
 ## Follow this link, to find all steps to Customize the official Jenkins image
 [Customize the official Jenkins Image](https://www.jenkins.io/doc/book/installing/docker/)
 
- <img src="https://github.com/ZaynabMohammed/jenkins/blob/master/jenkins.png" width="200" height="180" >
+ <img src="https://github.com/ZaynabMohammed/jenkins/blob/master/jenkins_with_docker/jenkins.png" width="200" height="180" >
  
 ## Running jenkins container based on custom image
  

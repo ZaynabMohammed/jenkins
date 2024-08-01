@@ -39,7 +39,8 @@ sudo apt-get install jenkins -y
 Step 5:
 Access Jenkins through browser:
 In the browser's address bar, enter `http://EC2_Public_IPv4_address:8080` and press Enter.
-![2](2.PNG)
+<img src="https://github.com/ZaynabMohammed/jenkins/blob/master/EC2_jenkins/2.PNG" width="700" height="620" >
+
 Step 6:
 Install Docker:
 ```bash
@@ -75,6 +76,7 @@ Step 1:
 2. Add build setup then Execute Shell 
 ```
 ![1](1.PNG)
+
 Step 2:
 Check that website is running into docker container inside our EC2 instance
 ```bash

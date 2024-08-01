@@ -14,7 +14,7 @@ a9ce44ab38d1   myjenkins-blueocean:2.452.3-1   "/usr/bin/tini -- /u…"   7 seco
 ## To access Jenkins container
   In the browser's address bar, enter `http://localhost:8080` and press Enter.
   
-  <img src="https://github.com/ZaynabMohammed/jenkins/blob/master/1.PNG" width="420" height="360" >
+  <img src="https://github.com/ZaynabMohammed/jenkins/blob/master/jenkins_with_docker/1.PNG" width="420" height="360" >
 
 ## What we will do inside jenkins Container ?!
    From this github repo [https://github.com/ZaynabMohammed/Multistage_docker.git](https://github.com/ZaynabMohammed/Multistage_docker.git), we will create a job in jenkins to deploy GO_app.

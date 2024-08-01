@@ -28,17 +28,17 @@ a9ce44ab38d1   myjenkins-blueocean:2.452.3-1   "/usr/bin/tini -- /u…"   7 seco
    3. In Build steps feild, choose Execute shell
       
    ![2](2.PNG)   
- 
-## GO_app now is running inside `jenkins-blueocean` container. 
+   
+   4. GO_app is running, now inside `jenkins-blueocean` container. 
 
-```bash
-$ docker exec -ti jenkins-blueocean bash
-jenkins@a9ce44ab38d1:/$ docker ps
-CONTAINER ID   IMAGE           COMMAND       CREATED         STATUS         PORTS                                       NAMES
-c82f121a143e   multistage_go   "/app/main"   4 minutes ago   Up 3 minutes   0.0.0.0:8085->8080/tcp, :::8085->8080/tcp   app2
-```
+  ```bash
+   $ docker exec -ti jenkins-blueocean bash
+   jenkins@a9ce44ab38d1:/$ docker ps
+   CONTAINER ID   IMAGE           COMMAND       CREATED         STATUS         PORTS                                       NAMES
+   c82f121a143e   multistage_go   "/app/main"   4 minutes ago   Up 3 minutes   0.0.0.0:8085->8080/tcp, :::8085->8080/tcp   app2
+ ```
  ### 2) Pipeline option:
- run a Pipeline job with below script
+ 1. Run a Pipeline job with below script
 ```bash
 pipeline {
     agent any
@@ -64,7 +64,7 @@ pipeline {
     }
 }
 ```
-## GO_app now is running inside `jenkins-blueocean` container. 
+ 2. GO_app is running, now inside `jenkins-blueocean` container. 
 ```bash
 $ docker exec -ti jenkins-blueocean bash
 jenkins@8b02dead366f:/$ docker ps

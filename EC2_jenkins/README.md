@@ -39,7 +39,7 @@ sudo apt-get install jenkins -y
 Step 5:
 Access Jenkins through browser:
 In the browser's address bar, enter `http://EC2_Public_IPv4_address:8080` and press Enter.
-<img src="https://github.com/ZaynabMohammed/jenkins/blob/master/EC2_jenkins/2.PNG" width="700" height="620" >
+<img src="https://github.com/ZaynabMohammed/jenkins/blob/master/EC2_jenkins/2.PNG" width="900" height="620" >
 
 Step 6:
 Install Docker:

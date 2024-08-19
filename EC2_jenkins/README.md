@@ -70,23 +70,23 @@ sudo apt update
 sudo apt install ansible -y
 ```
 ## 2] Jobs in jenkins
-1. Freestyle Job  
+### 1. Freestyle Job  
 Step 1:    
- 1. Add Repository [https://github.com/ZaynabMohammed/jenkins.git](https://github.com/ZaynabMohammed/jenkins.git), in Source Code Management
- 2. Add build setup then Execute Shell
+- Add Repository [https://github.com/ZaynabMohammed/jenkins.git](https://github.com/ZaynabMohammed/jenkins.git), in Source Code Management
+- Add build setup then Execute Shell  
    
 ![1](1.PNG)
 
 Step 2:  
-Check that website is running into docker container inside our EC2 instance
+- Check that website is running into docker container inside our EC2 instance
 ```bash
 $docker ps
 CONTAINER ID   IMAGE       COMMAND              CREATED         STATUS         PORTS                                               NAMES
 6669f596d471   app_image   "httpd-foreground"   3 minutes ago   Up 3 minutes   80/tcp, 0.0.0.0:5000->8080/tcp, :::5000->8080/tcp   app
 ```
-2. Pipeline Job  
+### 2. Pipeline Job  
 Step 1:  
-Run a pipeline Job with below script  
+- Run a pipeline Job with below script  
 ```bash
 pipeline {
     agent any
@@ -112,7 +112,7 @@ pipeline {
 }
 ```
 Step 2:  
-Check that website is running into docker container inside our EC2 instance  
+- Check that website is running into docker container inside our EC2 instance  
 ```bash
 $ docker ps
 CONTAINER ID   IMAGE       COMMAND              CREATED          STATUS          PORTS                                               NAMES
